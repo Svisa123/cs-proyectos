@@ -33,6 +33,7 @@ namespace ChatApp
             string[] hiddenWords = new string[] { "gato", "perro", "casa", "conejo", "azucar" };
             Random rnd = new Random();
             string hiddenWord = hiddenWords[rnd.Next(0, 5)];
+            string guessWord = "";
             for (int i = 0; i < hiddenWord.Length; i++)
             {
                 Console.Write("_ ");
@@ -40,11 +41,15 @@ namespace ChatApp
 
             Console.WriteLine("\n\n\n");
 
+
             char letter = Round.RoundHandler();
 
             Console.WriteLine("La letra digitada es: " + letter);
 
-            GuessLetter.GuessLetterHandler(letter , hiddenWord);
+            guessWord = GuessLetter.GuessLetterHandler(letter, hiddenWord);
+
+            Console.WriteLine(guessWord);
+            Console.WriteLine(hiddenWord);
 
         }
     }
