@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabriela\\OneDrive\\Desktop\\matteo-repository\\cs-proyectos\\ChatApp.csproj": {}
+    "E:\\mis trabajos\\Chat\\chatapp\\ChatApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabriela\\OneDrive\\Desktop\\matteo-repository\\cs-proyectos\\ChatApp.csproj": {
+    "E:\\mis trabajos\\Chat\\chatapp\\ChatApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabriela\\OneDrive\\Desktop\\matteo-repository\\cs-proyectos\\ChatApp.csproj",
+        "projectUniqueName": "E:\\mis trabajos\\Chat\\chatapp\\ChatApp.csproj",
         "projectName": "ChatApp",
-        "projectPath": "C:\\Users\\gabriela\\OneDrive\\Desktop\\matteo-repository\\cs-proyectos\\ChatApp.csproj",
-        "packagesPath": "C:\\Users\\gabriela\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabriela\\OneDrive\\Desktop\\matteo-repository\\cs-proyectos\\obj\\",
+        "projectPath": "E:\\mis trabajos\\Chat\\chatapp\\ChatApp.csproj",
+        "packagesPath": "C:\\Users\\Matteito\\.nuget\\packages\\",
+        "outputPath": "E:\\mis trabajos\\Chat\\chatapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gabriela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Matteito\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

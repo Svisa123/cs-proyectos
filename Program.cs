@@ -44,7 +44,7 @@ namespace ChatApp
 
             Console.WriteLine("La letra digitada es: " + letter);
 
-
+            GuessLetter.GuessLetterHandler(letter , hiddenWord);
 
         }
     }
