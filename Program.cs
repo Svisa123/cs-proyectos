@@ -29,11 +29,9 @@ namespace ChatApp
     {
         static void Main(string[] args)
         {
-            string[] hiddenWords = new string[] { "gato" , "perro", "casa" , "conejo" , "azucar" };
+            string[] hiddenWords = new string[] { "gato", "perro", "casa", "conejo", "azucar" };
             Random rnd = new Random();
-
-            int random  = rnd.Next(1, 5);
-           string hiddenWord ;
+            string hiddenWord = hiddenWords[rnd.Next(1, 5)];
         }
     }
 }
