@@ -29,7 +29,7 @@ namespace ChatApp
     {
         static void Main(string[] args)
         {
-           
+            string[] hiddenWords = new string[] { };
         }
     }
 }
