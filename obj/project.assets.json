@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Matteito\\.nuget\\packages\\": {}
+    "C:\\Users\\gabriela\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\mis trabajos\\Chat\\ChatApp\\ChatApp.csproj",
+      "projectUniqueName": "C:\\Users\\gabriela\\OneDrive\\Desktop\\matteo-repository\\cs-proyectos\\ChatApp.csproj",
       "projectName": "ChatApp",
-      "projectPath": "E:\\mis trabajos\\Chat\\ChatApp\\ChatApp.csproj",
-      "packagesPath": "C:\\Users\\Matteito\\.nuget\\packages\\",
-      "outputPath": "E:\\mis trabajos\\Chat\\ChatApp\\obj\\",
+      "projectPath": "C:\\Users\\gabriela\\OneDrive\\Desktop\\matteo-repository\\cs-proyectos\\ChatApp.csproj",
+      "packagesPath": "C:\\Users\\gabriela\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gabriela\\OneDrive\\Desktop\\matteo-repository\\cs-proyectos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Matteito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gabriela\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
