@@ -21,6 +21,7 @@ Si el jugador adivina la palabra, muestra un mensaje de victoria.
 Si se quedan sin intentos, muestra un mensaje de derrota y revela la palabra oculta.
 Este enfoque simplificado te permite crear un juego de adivinanza de palabras en C# sin necesidad de código más avanzado. A medida que te sientas más cómodo, puedes agregar funcionalidades adicionales y mejorar la interfaz de usuario.*/
 using System;
+using System.Reflection.Metadata.Ecma335;
 
 
 namespace ChatApp
@@ -31,7 +32,48 @@ namespace ChatApp
         {
             string[] hiddenWords = new string[] { "gato", "perro", "casa", "conejo", "azucar" };
             Random rnd = new Random();
-            string hiddenWord = hiddenWords[rnd.Next(1, 5)];
+            string hiddenWord = hiddenWords[rnd.Next(0, 5)];
+            for (int i = 0; i < hiddenWord.Length; i++)
+            {
+                Console.Write("_ ");
+            };
+
+            Console.WriteLine("\n\n\n");
+
+            char letter = RoundHandler();
+
+            Console.WriteLine("La letra digitada es: " + letter);
+
+            char RoundHandler()
+            {
+                char letterInput;
+                do
+                {
+                    Console.WriteLine("Ingrese una letra por ronda: ");
+
+                    try
+                    {
+                        string userInput = Console.ReadLine();
+
+                        if (userInput.Length == 1 && char.IsLetter(userInput[0]))
+                        {
+                            letterInput = userInput[0];
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Entrada no válida. Debe ingresar un  carácter válido.");
+                        }
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        Console.WriteLine("Se ha producido un error: " + ex.Message);
+                    }
+
+                } while (true);
+
+                return letterInput;
+            }
 
         }
     }
