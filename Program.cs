@@ -34,22 +34,37 @@ namespace ChatApp
             Random rnd = new Random();
             string hiddenWord = hiddenWords[rnd.Next(0, 5)];
             string guessWord = "";
-            for (int i = 0; i < hiddenWord.Length; i++)
+            List<char> letters = new List<char>();
+
+
+            do
             {
-                Console.Write("_ ");
-            };
+                for (int i = 0; i < hiddenWord.Length; i++)
+                {
+                    Console.Write("_ ");
+                };
 
-            Console.WriteLine("\n\n\n");
+                Console.WriteLine("\n\n\n");
 
 
-            char letter = Round.RoundHandler();
+                char letter = Round.RoundHandler();
+                if (letters.Contains(letter))
+                {
+                    Console.WriteLine("letra invalida intentalo de nuevo");
+                }
+                else
+                {
+                    letters.Add(letter);
 
-            Console.WriteLine("La letra digitada es: " + letter);
+                    Console.WriteLine("La letra digitada es: " + letter);
 
-            guessWord = GuessLetter.GuessLetterHandler(letter, hiddenWord);
+                    guessWord = GuessLetter.GuessLetterHandler(letters, hiddenWord);
 
-            Console.WriteLine(guessWord);
-            Console.WriteLine(hiddenWord);
+                }
+
+                Console.WriteLine(guessWord);
+            } while (guessWord != hiddenWord);
+
 
         }
     }

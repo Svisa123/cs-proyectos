@@ -6,23 +6,29 @@ namespace ChatApp
   class GuessLetter
   {
 
-    public static string GuessLetterHandler(char letter, string hiddenWord)
+    public static string GuessLetterHandler(List<char> letters, string hiddenWord)
     {
+
       string newGuessWord = "";
       bool badTry = false;
       for (int i = 0; i < hiddenWord.Length; i++)
       {
 
-        if (letter == hiddenWord[i])
+        for (int j = 0; j < letters.Count(); j++)
         {
-          newGuessWord += letter;
-          badTry = true;
-        }
-        else
-        {
-          newGuessWord += '_';
+          if (letters[j] == hiddenWord[i])
+          {
+            newGuessWord += letters[j];
+            badTry = true;
+          }
+          else
+          {
+            badTry = false;
+          }
+
         }
 
+        if (!badTry) newGuessWord += '_';
 
       }
 
